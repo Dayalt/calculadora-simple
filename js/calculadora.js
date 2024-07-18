@@ -35,3 +35,12 @@ function dividir() {
     let resultado = inputOperando1 / inputOperando2;
     document.getElementById('resultado').innerHTML = isNaN(resultado) ? 'Error' : resultado;
 }
+
+// Función para reiniciar
+function reiniciar(){
+    // eliminar el contenido del #op1, #op2 y #resultado 
+    document.getElementById('op1').value = '';
+    document.getElementById('op2').value = '';
+
+    document.getElementById('resultado').innerHTML = '';
+}

@@ -9,7 +9,6 @@ html{
     margin: 25rem auto;
     padding-top: 1rem;
     width: 35rem;
-    height: 25rem;
     background-color: #3F51B5;
     border-radius: 2rem;
     box-shadow: .3rem .3rem .6rem .2rem rgb(128, 127, 127);
@@ -77,4 +76,16 @@ html{
 .operadores:hover{
     background-color: CornflowerBlue;
     box-shadow: .2rem .4rem .4rem .1rem #2d2c2cbe;
+}
+
+.op-reiniciar{
+    width: 100% !important;
+    margin-bottom: 2rem !important;
+    background-color: #4CC9F0 !important;
+}
+
+/*HOVER*/
+.op-reiniciar:hover{
+    background-color: #4895EF !important;
+    box-shadow: .2rem .4rem .4rem .1rem #3f50b5 !important;
 }
