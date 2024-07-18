@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora Simple</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="contenedor-calculadora">
+        <div id="campo-resultado">
+            <p id="resultado"></p>
+        </div>
+        <div class="campo campo-operandos">
+            <input id="op1" type="number" class="op-izq" placeholder="operando">
+            <input id="op2" type="number" placeholder="operando">
+        </div>
+
+        <div class="campo campo-operadores">
+            <button id="suma" class="operadores" onclick="sumar()"><span>+</span></button>
+            <button id="resta" class="operadores" onclick="resta()"><span>-</span></button>
+            <button id="multiplicacion" class="operadores" onclick="multiplicar()"><span>*</span></button>
+            <button id="division" class="operadores" onclick="dividir()"><span>/</span></button>
+        </div>
+    </div>
+
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
