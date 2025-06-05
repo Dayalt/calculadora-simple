@@ -2,6 +2,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: #1b1b32;
 }
 
 
@@ -11,15 +12,25 @@ html{
     width: 35rem;
     background-color: #3F51B5;
     border-radius: 2rem;
-    box-shadow: .3rem .3rem .6rem .2rem rgb(128, 127, 127);
+    box-shadow: .3rem .3rem .6rem .2rem rgb(2, 2, 2);
 }
 
 #campo-resultado{
     margin: .5rem auto;
     width: 80%;
     height: 6rem;
-    background-color: #dedeff;
-    box-shadow: inset -.3rem -.3rem .6rem .2rem rgb(128, 127, 127);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #0a0a23;
+    color: white;
+    padding: 11px 20px 11px 11px;
+    margin: 1px solid #888;
+    box-shadow: -.8px 4px 1px 1px white;
 }
 #campo-resultado > p{
     margin: 0;
@@ -34,6 +45,7 @@ html{
 .campo{
     display: flex; 
     flex-wrap: wrap;   
+    justify-content: center;
     margin: 2rem;
 }
 .campo-operandos input{
@@ -47,14 +59,26 @@ html{
 }
 
 .campo-operadores > .operadores{
-    display: flex;
-    align-items: center;
-    background-color: #757de8;
     width: 6.5rem;
     margin: .5rem;
-    height: 4rem;
-    border-radius: .5rem;
+    height: 6.5rem;
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #1b1b32;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+    scale: 1;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.operadores.signo{
+    background-color: rgb(214, 20, 194);
 }
 .operadores.igual{
     margin-left: 3rem;
@@ -70,22 +94,27 @@ html{
     text-align: center;
     font-size:large;
     font-weight: bold;
-    color: #dedeff;
+    color: #fefefe;
 }
 
 .operadores:hover{
     background-color: CornflowerBlue;
-    box-shadow: .2rem .4rem .4rem .1rem #2d2c2cbe;
+    border: 2px solid rgb(237, 233, 233);
+    box-shadow: .2rem .4rem .4rem .1rem #2d2c2cbe, inset .1rem .2rem 0.3rem 2px #2d2c2c6a;
+    transform: scale(.9);
+}
+.operadores.signo:hover{
+    background-color: rgb(237, 100, 223);
 }
 
 .op-reiniciar{
     width: 100% !important;
     margin-bottom: 2rem !important;
-    background-color: #4CC9F0 !important;
+    background-color: #16bfd9 !important;
 }
 
 /*HOVER*/
 .op-reiniciar:hover{
-    background-color: #4895EF !important;
-    box-shadow: .2rem .4rem .4rem .1rem #3f50b5 !important;
+    background-color: #05cfee !important;
+    box-shadow: .2rem .4rem .4rem .1rem #2d2c2cbe, inset .1rem .2rem 0.3rem 2px #2d2c2c6a!important;
 }
