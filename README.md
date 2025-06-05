@@ -4,26 +4,24 @@ Este es un proyecto de una calculadora simple construida en **HTML**, **CSS** y 
 
 ## Característica 
 
-- Operaciones básicas de suma, resta, multiplicación y división.
-- Validación de 'Error' si los operandos no son números validos.
-- Botón de Reinicio, para limpiar los campos de entrada y el resultado.
+- Operaciones básicas: suma, resta, multiplicación y división.
+- Evaluación de expresiones encadenadas (ej. `12 + 7 * 3`).
+- Validación de errores si la operación no es válida.
+- Botón de reinicio para limpiar el resultado.
+- Estilo responsive y diseño amigable para practicar DOM y eventos.
 
 ## Uso
 
 ### 1 Ingresar los operandos.
-1. Ingresa el primer número en el campo de entrada de la izquierda **(Operando 1)**.
-2. Ingresa el segundo número en el campo de entrada de la derecha **(Operando 2)**.
+- Haz clic en los botones numéricos (`0-9`) y operadores (`+ - * /`) para construir tu operación. El resultado se irá mostrando en la parte superior.
 
 ### 2 Seleccionar la operacion:
 
-- **Suma (+)**: Suma los dos números ingresados.
-- **Resta (-)**: Resta el segundo número del primero.
-- **Multiplicación (*)**: Multiplica los dos números.
-- **División (/)**: Divide el primer número por el segundo.
+- Haz clic en el botón `=` para calcular la expresión. Si es válida, se mostrará el resultado; de lo contrario, se mostrará **"Error"**.
 
 ### 3 Reiniciar la Calculadora
 
-- **Reiniciar (C)**: Limpia los campos de entrada y el resultado.
+- **Reiniciar (C)**: Limpia la expresión y comenzar de nuevo.
 
 ## Instalación
 
