@@ -11,16 +11,24 @@
         <div id="campo-resultado">
             <p id="resultado"></p>
         </div>
-        <div class="campo campo-operandos">
-            <input id="op1" type="number" class="op-izq" placeholder="operando">
-            <input id="op2" type="number" placeholder="operando">
-        </div>
 
         <div class="campo campo-operadores">
-            <button id="suma" class="operadores" onclick="sumar()"><span>+</span></button>
-            <button id="resta" class="operadores" onclick="restar()"><span>-</span></button>
-            <button id="multiplicacion" class="operadores" onclick="multiplicar()"><span>*</span></button>
-            <button id="division" class="operadores" onclick="dividir()"><span>/</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('1')"><span>1</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('2')"><span>2</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('3')"><span>3</span></button>
+            <button class="operadores signo" onclick="agregarValor('+')"><span>+</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('4')"><span>4</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('5')"><span>5</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('6')"><span>6</span></button>
+            <button class="operadores signo" onclick="agregarValor('-')"><span>-</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('7')"><span>7</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('8')"><span>8</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('9')"><span>9</span></button>
+            <button id="multiplicacion" class="operadores signo" onclick="multiplicar()"><span>*</span></button>
+            <button class="operadores" type="button" onclick="calcular()" ><span>=</span></button>
+            <button id="cero" class="operadores" type="button" onclick="agregarValor('0')"><span>0</span></button>
+            <button class="operadores" type="button" onclick="agregarValor('.')">.</button>
+            <button id="division" class="operadores signo" onclick="agregarValor('/')"><span>/</span></button>
             <button id="reset" class="operadores op-reiniciar" onclick="reiniciar()"><span>C</span></button>
         </div>
     </div>
